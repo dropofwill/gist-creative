@@ -3,74 +3,94 @@
   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif !important;
 }
 
+@media (min-width: 1200px) {
+  .container--small {
+    width: 1000px;
+  }
+}
+
+.container--small {
+  max-width: 100%;
+}
+
+
 h2 {
   font-weight: bold !important;
 }
 
-.header__logo {
-  width: 100%;
-  max-height: 200px;
-}
-
-.header__slogan,
-.header__social {
-  height: 100%;
-  max-height: 200px;
-}
-
 .header {
-  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  height: 175px;
 }
 
-.align-bottom {
-  width: 100%;
+.header-item {
+  width: 32%;
+  position: relative;
+}
+
+.header-item__slogan {
+  border-bottom: 25px solid #06AA4C;
+  padding-right: 1em;
+}
+
+.header-item__social {
+  border-bottom: 25px solid #06AA4C;
+}
+
+.header-item__logo img {
+  max-width: 100%;
+  max-height: 100%;
   position: absolute;
   bottom: 0;
-  border-bottom: 25px solid #06AA4C;
+}
+
+.header-item__slogan div,
+.header-item__social div {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.header-item__social div {
+  float: right;
+  text-align: right;
 }
 
 .social-icons {
   display: inline;
-
-}
-
-.social-icons:after {
-  display: inline-block;
-  width: 100%;
-  content: '';
 }
 
 .social-icons li {
   display: inline-block;
-  text-align: center;
-  background: #06AA4C;
-  width: 50px;
-  height: 50px;
+  font-size: 40px;
 }
 
 .social-icons li a {
-  color: white;
+  color: #69A845;
 }
 
 .social-email {
-  background: #06AA4C;
-  display: block;
-  height: 30px;
-  border-radius: 3px;
-  padding: 3px;
-  text-align: center;
-  margin-bottom: 1em;
-}
-
-.social-email a {
-  color: white;
+  text-align: right;
 }
 
 .product {
   margin-top: 2em;
+  margin-bottom: 2em;
+  display: flex;
+  justify-content: space-between;
 }
 
-.product img {
-  width: 150px;
-  height: 150px;
+.product-item {
+  width: 32%;
+  position: relative;
+}
+
+.product__gallery img {
+  width: 100%;
+  margin-bottom: 1.5em;
+}
+
+hr {
+  border-bottom: 25px solid #06AA4C;
 }
